@@ -27,11 +27,7 @@ const Footer = () => {
           </div>
           
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-muted-foreground">
-            <p className="flex items-center gap-2">
-              Feito com <Heart className="text-red-500" size={16} fill="currentColor" /> e muito café
-            </p>
-            <span className="hidden md:block">•</span>
-            <p>© 2024 Seu Nome. Todos os direitos reservados.</p>
+            <p>© 2025 Caio Costa. Todos os direitos reservados.</p>
           </div>
         </div>
       </div>

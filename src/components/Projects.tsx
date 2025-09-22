@@ -6,10 +6,10 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "Plataforma completa de e-commerce com painel administrativo, sistema de pagamentos e gestão de produtos.",
+      title: "Zeno: Plataforma ERP",
+      description: "TCC do curso técnico de Desenvolvimento de sistemas. Zeno é um sistema ERP projetado para Microempreendedores, com gestão de estoque, fluxo de caixa e mais.",
       image: "🛒",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      technologies: ["React", "Node.js", "Supabase"],
       github: "#",
       demo: "#"
     },

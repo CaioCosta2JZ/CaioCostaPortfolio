@@ -27,8 +27,8 @@ const Header = () => {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-gradient">
-            Portfólio
+          <div className="text-2xl font-bold ">
+            Caio Costa
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -36,7 +36,7 @@ const Header = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-muted-foreground hover:text-primary transition-smooth capitalize"
+                className="text hover:text-primary transition-smooth capitalize"
               >
                 {item === "formacao" ? "Formação" : item}
               </button>
