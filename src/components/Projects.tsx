@@ -3,37 +3,42 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 
+// importa imagens locais (ajuste o caminho se necessário)
+import fotoZeno from "../../assets/fotoZeno.png";
+import fotoUbetter from "../../assets/fotoUbetter.png";
+import fotoBombhero from "../../assets/fotoBombhero.png";
+
 const Projects = () => {
   const projects = [
     {
       title: "Zeno: Plataforma ERP",
       description: "TCC do curso técnico de Desenvolvimento de sistemas. Zeno é um sistema ERP projetado para Microempreendedores, com gestão de estoque, fluxo de caixa e mais.",
-      image: "🛒",
+      image: fotoZeno, // aqui virou o import
       technologies: ["React", "Node.js", "Supabase"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Task Management App",
-      description: "Aplicativo de gerenciamento de tarefas com colaboração em tempo real e notificações.",
-      image: "📝",
-      technologies: ["Vue.js", "Express", "Socket.io", "MongoDB"],
+      title: "UBetter: Aplicativo de bem-estar",
+      description: "Aplicativo de incentivo a hábitos saudáveis e metas de bem-estar.",
+      image: fotoUbetter,
+      technologies: ["React Native", "Node.js", "Firebase"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Weather Dashboard",
+      title: "BOMBHERO: Jogo de estratégia",
       description: "Dashboard interativo para visualização de dados meteorológicos com gráficos e previsões.",
-      image: "🌤️",
-      technologies: ["React", "D3.js", "API REST", "Chart.js"],
+      image: fotoBombhero,
+      technologies: ["HTML5", "CSS3", "JavaScript", "JQuery"],
       github: "#",
       demo: "#"
     },
     {
-      title: "Portfolio Website",
-      description: "Site pessoal responsivo com design moderno e animações suaves para apresentação profissional.",
-      image: "💼",
-      technologies: ["HTML5", "CSS3", "JavaScript", "GSAP"],
+      title: "CPSHelp: Sistema de chamados",
+      description: "Aplicativo Windows Forms desenvolvido para auxiliares docentes.",
+      image: "🔨",
+      technologies: ["C#", "Windos Forms", "MySQL"],
       github: "#",
       demo: "#"
     }
@@ -52,7 +57,16 @@ const Projects = () => {
               <Card key={index} className="card-gradient shadow-elegant overflow-hidden hover:shadow-glow transition-smooth group">
                 <div className="p-6">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="text-4xl">{project.image}</div>
+                    {/* Se for string (emoji), mostra texto. Se for import de imagem, mostra <img /> */}
+                    {typeof project.image === "string" && project.image.startsWith("🛒") || project.image.length <= 3 ? (
+                      <div className="text-6xl">{project.image}</div>
+                    ) : (
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-16 h-18 object-contain"
+                      />
+                    )}
                     <div>
                       <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
                     </div>

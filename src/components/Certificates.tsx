@@ -5,11 +5,11 @@ import { Award, ExternalLink } from "lucide-react";
 const Certificates = () => {
   const certificates = [
     {
-      name: "AWS Certified Developer",
-      issuer: "Amazon Web Services",
-      date: "2024",
-      description: "Certificação em desenvolvimento de aplicações na nuvem AWS",
-      skills: ["AWS", "Cloud", "DevOps"]
+      name: "Nivelamento Hackers do Bem - Formação em Cibersegurança",
+      issuer: "SENAI",
+      date: "2025",
+      description: "Curso sobre Introdução à cibersegurança, Hardware, Redes, Sistemas operacionais Windows e Linux, Lógica de programação, e Desenvolvimento de scripts voltados à área de segurança da informação.",
+      skills: [ "Redes de computadores" , "Serviços de rede" , "Linux" , "Lógica de programação" , "Programação (computação)" , "Hardware de computador" , "IPv6" , "IPv4" , "Microsoft Windows" , "Desenvolvimento de scripts" , "Cibersegurança"]
     },
     {
       name: "React Developer Certificate",
@@ -26,8 +26,8 @@ const Certificates = () => {
       skills: ["Node.js", "MongoDB", "Express"]
     },
     {
-      name: "Python for Data Science",
-      issuer: "DataCamp",
+      name: "Robótica - micro:bit básico",
+      issuer: "SESI São Paulo",
       date: "2022",
       description: "Certificação em análise de dados e machine learning com Python",
       skills: ["Python", "Data Science", "ML"]
@@ -37,7 +37,7 @@ const Certificates = () => {
   return (
     <section id="certificados" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient">
             Certificados
           </h2>

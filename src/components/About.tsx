@@ -12,13 +12,11 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Sou um desenvolvedor apaixonado por tecnologia e inovação, com experiência em desenvolvimento full stack. 
-                Especializo-me em criar soluções digitais que combinam funcionalidade excepcional com design elegante.
+                Profissional com sólida base em Desenvolvimento Full Stack e Cibersegurança. Minha experiência em abrange desde a Análise e Projeto de Sistemas até Testes e Qualidade de Software (QA), com foco em entregar soluções completas e de alta performance, além de garantir a segurança dos sistemas construídos. Sou proativo na busca por otimizações, eficaz na execução de tarefas e resiliente para enfrentar desafios, garantindo a entrega de projetos inovadores em ambientes de desenvolvimento Web, Mobile e Desktop.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Minha jornada na programação começou há alguns anos, e desde então tenho me dedicado constantemente 
-                ao aprendizado de novas tecnologias e melhores práticas de desenvolvimento.
+                
               </p>
               
               <div className="flex flex-wrap gap-3 mt-8">
@@ -40,15 +38,16 @@ const About = () => {
                     <span className="text-4xl">👨‍💻</span>
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Desenvolvedor Full Stack</h3>
+                  <h3 className="text-2xl font-bold mb-2">Profissional em Cibersegurança</h3>
                   <p className="text-muted-foreground">
-                    Focado em criar experiências digitais excepcionais
+                    Focado em entregar qualidade, performance e segurança.
                   </p>
                 </div>
                 
                 <div className="space-y-4">
                   {[
-                    { label: "Projetos Concluídos", value: "15+" },
-                    { label: "Anos de Experiência", value: "3+" },
+                    { label: "Projetos Concluídos", value: "6+" },
+                    { label: "Anos de Experiência com projetos acadêmicos", value: "2+" },
                     { label: "Tecnologias", value: "10+" }
                   ].map((stat) => (
                     <div key={stat.label} className="flex justify-between items-center">

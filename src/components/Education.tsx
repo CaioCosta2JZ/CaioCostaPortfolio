@@ -4,24 +4,18 @@ import { GraduationCap, Calendar } from "lucide-react";
 const Education = () => {
   const education = [
     {
-      degree: "Bacharelado em Ciência da Computação",
-      institution: "Universidade Federal",
-      period: "2020 - 2024",
-      description: "Formação sólida em algoritmos, estruturas de dados, engenharia de software e desenvolvimento de sistemas."
-    },
-    {
-      degree: "Curso Técnico em Informática",
-      institution: "Instituto Técnico",
-      period: "2018 - 2020",
-      description: "Base fundamental em programação, banco de dados e desenvolvimento web."
+      degree: "Habilitação profissional em Técnico em Desenvolvimento de sistemas",
+      institution: "ETEC Martinho di Ciero",
+      period: "2023 - 2025",
+      description: "Formação técnica com foco prático e teórico no ciclo completo de desenvolvimento de software — desde o design da interface até testes de qualidade (QA). A grade curricular abordou desde lógica e algoritmos até segurança da informação, web, mobile e banco de dados."
     }
   ];
 
   return (
     <section id="formacao" className="py-20">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-5xl md:text-5xl font-bold text-center mb-16 text-gradient">
             Formação Acadêmica
           </h2>
           
