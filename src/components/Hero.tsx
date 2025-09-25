@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center hero-gradient relative">
-      <div className="container mx-auto px-6 text-primary-foreground">
+      <div className="container mx-auto px-10 text-primary-foreground">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           
           {/* Imagem à esquerda */}
@@ -22,10 +22,10 @@ const Hero = () => {
           </div>
 
           {/* Texto à direita */}
-          <div className="text-center md:text-left">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          <div className="text-center md:text-left flex-1">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
               Olá, eu sou
-              <span className="block text-6xl md:text-8xl mt-2">
+              <span className="block text-5xl md:text-8xl mt-2">
                 Caio Costa
               </span>
             </h1>

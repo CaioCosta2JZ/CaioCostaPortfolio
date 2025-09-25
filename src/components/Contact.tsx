@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  /*const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: ""
@@ -30,7 +30,7 @@ const Contact = () => {
       [e.target.name]: e.target.value
     });
   };
-
+*/
   return (
     <section id="contato" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
@@ -39,12 +39,12 @@ const Contact = () => {
             Contato
           </h2>
           
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-1 gap-12">
             <Card className="card-gradient shadow-elegant p-8">
               <h3 className="text-2xl font-bold mb-6">Vamos conversar!</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 Estou sempre aberto a novas oportunidades e projetos interessantes. 
-                Entre em contato comigo através do formulário ou pelos canais abaixo.
+                Entre em contato comigo através dos canais abaixo.
               </p>
               
               <div className="space-y-6">
@@ -54,7 +54,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-muted-foreground">seuemail@exemplo.com</p>
+                    <p className="text-muted-foreground">caiocosta.profissional2007@gmail.com</p>
                   </div>
                 </div>
                 
@@ -64,7 +64,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">Telefone</p>
-                    <p className="text-muted-foreground">(11) 9 9999-9999</p>
+                    <p className="text-muted-foreground"> +55 (11) 96413-1118</p>
                   </div>
                 </div>
                 
@@ -74,70 +74,22 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">Localização</p>
-                    <p className="text-muted-foreground">São Paulo, SP - Brasil</p>
+                    <p className="text-muted-foreground">Itu, SP - Brasil</p>
                   </div>
                 </div>
               </div>
               
               <div className="flex gap-4 mt-8">
-                <a href="#" className="p-3 bg-primary/10 rounded-full hover:bg-primary/20 transition-smooth">
+                <a href="https://github.com/CaioCosta2JZ" className="p-3 bg-primary/10 rounded-full hover:bg-primary/20 transition-smooth">
                   <Github className="text-primary" size={20} />
                 </a>
-                <a href="#" className="p-3 bg-primary/10 rounded-full hover:bg-primary/20 transition-smooth">
+                <a href="https://www.linkedin.com/in/caio-costa2jz/" className="p-3 bg-primary/10 rounded-full hover:bg-primary/20 transition-smooth">
                   <Linkedin className="text-primary" size={20} />
                 </a>
               </div>
             </Card>
             
-            <Card className="card-gradient shadow-elegant p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium mb-2">Nome</label>
-                  <Input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleInputChange}
-                    placeholder="Seu nome completo"
-                    required
-                    className="transition-smooth focus:shadow-glow"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium mb-2">Email</label>
-                  <Input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder="seu@email.com"
-                    required
-                    className="transition-smooth focus:shadow-glow"
-                  />
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium mb-2">Mensagem</label>
-                  <Textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="Conte-me sobre seu projeto..."
-                    rows={5}
-                    required
-                    className="transition-smooth focus:shadow-glow"
-                  />
-                </div>
-                
-                <Button
-                  type="submit"
-                  className="w-full hero-gradient text-primary-foreground hover:shadow-glow transition-smooth"
-                >
-                  Enviar Mensagem
-                </Button>
-              </form>
-            </Card>
+            
           </div>
         </div>
       </div>

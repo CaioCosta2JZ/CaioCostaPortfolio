@@ -12,36 +12,39 @@ const Projects = () => {
   const projects = [
     {
       title: "Zeno: Plataforma ERP",
-      description: "TCC do curso técnico de Desenvolvimento de sistemas. Zeno é um sistema ERP projetado para Microempreendedores, com gestão de estoque, fluxo de caixa e mais.",
-      image: fotoZeno, // aqui virou o import
+      description:
+        "TCC do curso técnico de Desenvolvimento de sistemas. Zeno é um sistema ERP projetado para Microempreendedores, com gestão de estoque, fluxo de caixa e mais.",
+      image: fotoZeno,
       technologies: ["React", "Node.js", "Supabase"],
-      github: "#",
-      demo: "#"
+      github: "https://github.com/TCC-Zeno/Zeno/",
+      demo: "https://tcc-zeno.onrender.com/",
     },
     {
       title: "UBetter: Aplicativo de bem-estar",
-      description: "Aplicativo de incentivo a hábitos saudáveis e metas de bem-estar.",
+      description:
+        "Aplicativo de incentivo a hábitos saudáveis e metas de bem-estar.",
       image: fotoUbetter,
       technologies: ["React Native", "Node.js", "Firebase"],
-      github: "#",
-      demo: "#"
+      github: "https://github.com/CaioCosta2JZ/UBetter",
+      demo: "https://github.com/CaioCosta2JZ/UBetter",
     },
     {
       title: "BOMBHERO: Jogo de estratégia",
-      description: "Dashboard interativo para visualização de dados meteorológicos com gráficos e previsões.",
+      description:
+        "Dashboard interativo para visualização de dados meteorológicos com gráficos e previsões.",
       image: fotoBombhero,
       technologies: ["HTML5", "CSS3", "JavaScript", "JQuery"],
-      github: "#",
-      demo: "#"
+      github: "https://github.com/CarlosMattei/BOMBHERO",
+      demo: "https://bombhero.vercel.app/pages/paginaInicial.html",
     },
     {
       title: "CPSHelp: Sistema de chamados",
       description: "Aplicativo Windows Forms desenvolvido para auxiliares docentes.",
       image: "🔨",
-      technologies: ["C#", "Windos Forms", "MySQL"],
-      github: "#",
-      demo: "#"
-    }
+      technologies: ["C#", "Windows Forms", "MySQL"],
+      github: "https://github.com/CarlosMattei/sistema-CPS",
+      demo: "https://github.com/CarlosMattei/sistema-CPS",
+    },
   ];
 
   return (
@@ -51,14 +54,18 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient">
             Projetos
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
-              <Card key={index} className="card-gradient shadow-elegant overflow-hidden hover:shadow-glow transition-smooth group">
+              <Card
+                key={index}
+                className="card-gradient shadow-elegant overflow-hidden hover:shadow-glow transition-smooth group"
+              >
                 <div className="p-6">
                   <div className="flex items-center gap-4 mb-4">
-                    {/* Se for string (emoji), mostra texto. Se for import de imagem, mostra <img /> */}
-                    {typeof project.image === "string" && project.image.startsWith("🛒") || project.image.length <= 3 ? (
+                    {/* Se for emoji (string curta), mostra texto. Se for imagem, renderiza <img /> */}
+                    {typeof project.image === "string" &&
+                    project.image.length <= 3 ? (
                       <div className="text-6xl">{project.image}</div>
                     ) : (
                       <img
@@ -68,44 +75,65 @@ const Projects = () => {
                       />
                     )}
                     <div>
-                      <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                      <h3 className="text-2xl font-bold mb-2">
+                        {project.title}
+                      </h3>
                     </div>
                   </div>
-                  
+
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     {project.description}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech) => (
-                      <Badge key={tech} variant="secondary" className="bg-primary/10 text-primary">
+                      <Badge
+                        key={tech}
+                        variant="secondary"
+                        className="bg-primary/10 text-primary"
+                      >
                         {tech}
                       </Badge>
                     ))}
                   </div>
-                  
+
                   <div className="flex gap-4">
                     <Button
+                      asChild
                       variant="outline"
                       size="sm"
                       className="flex items-center gap-2 hover:bg-primary hover:text-primary-foreground transition-smooth"
                     >
-                      <Github size={16} />
-                      Código
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github size={16} />
+                        Código
+                      </a>
                     </Button>
+
                     <Button
+                      asChild
                       size="sm"
                       className="flex items-center gap-2 hero-gradient text-primary-foreground hover:shadow-glow transition-smooth"
                     >
-                      <ExternalLink size={16} />
-                      Demo
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink size={16} />
+                        Demo
+                      </a>
                     </Button>
                   </div>
                 </div>
               </Card>
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Button
               variant="outline"

@@ -12,25 +12,25 @@ const Certificates = () => {
       skills: [ "Redes de computadores" , "Serviços de rede" , "Linux" , "Lógica de programação" , "Programação (computação)" , "Hardware de computador" , "IPv6" , "IPv4" , "Microsoft Windows" , "Desenvolvimento de scripts" , "Cibersegurança"]
     },
     {
-      name: "React Developer Certificate",
-      issuer: "Meta",
-      date: "2023",
-      description: "Certificação avançada em desenvolvimento React e JavaScript",
-      skills: ["React", "JavaScript", "Frontend"]
-    },
-    {
-      name: "Full Stack Web Development",
-      issuer: "Coursera",
-      date: "2023",
-      description: "Curso completo de desenvolvimento web full stack",
-      skills: ["Node.js", "MongoDB", "Express"]
-    },
-    {
       name: "Robótica - micro:bit básico",
       issuer: "SESI São Paulo",
       date: "2022",
-      description: "Certificação em análise de dados e machine learning com Python",
-      skills: ["Python", "Data Science", "ML"]
+      description: "Conceitos básicos de programação, automação e princípios da robótica, Pensamento científico, crítico e criativo; Pensamento computacional (raciocínio lógico, lógica de programação); Resolução de situação-problema; Cultura Maker e projetos de autoria; Trabalho em equipe (colaboração, respeito, empatia, etc).",
+      skills: ["Lógica de programação", "Arduíno", "micro:bit"]
+    },
+    {
+      name: "Imersão Cloud DevOps",
+      issuer: "Coursera",
+      date: "2023",
+      description: "Curso de aproximadamente 2 horas sobre conceitos fundamentais na área de DevOps e noção básica sobre Google Cloud.",
+      skills: ["Google Cloud", "DevOps", "Docker"]
+    },
+    {
+      name: "Imersão Dados com Python",
+      issuer: "Meta",
+      date: "2025",
+      description: "Imersão sobre manipulação de dados com a linguagem de programação Python, usando bibliotecas como Pandas e Plotly. 4 horas de curso",
+      skills: ["Python", "Manipulação de dados", "Plotly", "Pandas (Software)", "Análise de dados"]
     }
   ];
 
