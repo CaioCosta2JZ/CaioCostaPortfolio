@@ -15,7 +15,7 @@ const Hero = () => {
           {/* Imagem à esquerda */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="../assets/fotoMinhav2.png" // Coloque sua foto dentro de /public
+              src="./fotoMinhav2.png" // Coloque sua foto dentro de /public
               alt="Caio Costa"
               className="w-96 h-96 md:w-128 md:h-128 rounded-full object-cover shadow-elegant"
             />
