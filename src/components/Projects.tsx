@@ -5,7 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 
 // importa imagens locais (ajuste o caminho se necessário)
 import fotoZeno from "../../assets/fotoZeno.png";
-import fotoUbetter from "../../assets/fotoUbetter.png";
+import fotoUbetter from "../../assets/fotoUBetter.png";
 import fotoBombhero from "../../assets/fotoBombhero.png";
 
 const Projects = () => {
