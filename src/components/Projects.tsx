@@ -4,9 +4,9 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 
 // importa imagens locais (ajuste o caminho se necessário)
-import fotoZeno from "./fotoZeno.png";
-import fotoUbetter from "./fotoUBetter.png";
-import fotoBombhero from "./fotoBombhero.png";
+import fotoZeno from "/fotoZeno.png";
+import fotoUbetter from "/fotoUBetter.png";
+import fotoBombhero from "/fotoBombhero.png";
 
 const Projects = () => {
   const projects = [
