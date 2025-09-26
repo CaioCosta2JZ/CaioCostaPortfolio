@@ -15,7 +15,7 @@ const Hero = () => {
           {/* Imagem à esquerda */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="/fotoMinhav2.png" // Coloque sua foto dentro de /public
+              src="../../public/fotoMinhav2.png" // Coloque sua foto dentro de /public
               alt="Caio Costa"
               className="w-96 h-96 md:w-128 md:h-128 rounded-full object-cover shadow-elegant"
             />
@@ -23,9 +23,9 @@ const Hero = () => {
 
           {/* Texto à direita */}
           <div className="text-center md:text-left flex-1">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+            <h1 className="text-4xl md:text-2xl font-bold mb-6 animate-fade-in">
               Olá, eu sou
-              <span className="block text-5xl md:text-8xl mt-2">
+              <span className="block text-8xl md:text-5xl mt-2">
                 Caio Costa
               </span>
             </h1>
