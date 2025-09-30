@@ -19,19 +19,19 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
+      className={`block fixed top-0 left-0 right-0 z-50 transition-smooth ${
         isScrolled
           ? "bg-background/80 backdrop-blur-md shadow-elegant"
           : "bg-transparent"
       }`}
     >
       <nav className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold ">
+        <div className="block flex items-center justify-between">
+          <div className="block text-2xl font-bold ">
             Caio Costa
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {["sobre", "formacao", "certificados", "projetos", "contato"].map((item) => (
               <button
                 key={item}

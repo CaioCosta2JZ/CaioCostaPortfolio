@@ -29,12 +29,15 @@ const Footer = () => {
             </a>
 
             <a
-              href="mailto:caiocosta.profissional2007@gmail.com"
-              aria-label="E-mail"
-              className="text-white/80 hover:text-white transition-smooth"
-            >
-              <Mail size={24} />
-            </a>
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=caiocosta.profissional2007@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="E-mail"
+  className="text-white/80 hover:text-white transition-smooth"
+>
+  <Mail size={24} />
+</a>
+
           </div>
 
           {/* Direitos autorais */}

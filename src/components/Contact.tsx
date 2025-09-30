@@ -32,15 +32,15 @@ const Contact = () => {
   };
 */
   return (
-    <section id="contato" className="py-20 bg-secondary/30">
+    <section id="contato" className="py-20 bg-secondary/30 md:pt-0">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient">
             Contato
           </h2>
           
-          <div className="grid md:grid-cols-1 gap-12">
-            <Card className="card-gradient shadow-elegant p-8">
+          <div className="grid md:grid-cols-1 gap-8">
+            <Card className="card-gradient shadow-elegant p-4">
               <h3 className="text-2xl font-bold mb-6">Vamos conversar!</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 Estou sempre aberto a novas oportunidades e projetos interessantes. 

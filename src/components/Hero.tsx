@@ -9,16 +9,15 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center hero-gradient relative">
-      <div className="container mx-auto px-10 text-primary-foreground">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          
+    <section className="min-h-screen flex flex-col items-center justify-center hero-gradient relative pt-24 md:pt-0">
+      <div className="container mx-auto px-10 text-primary-foreground flex-1 flex items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center w-full">
           {/* Imagem à esquerda */}
           <div className="flex justify-center md:justify-end">
             <img
               src={fotoMinhav2} // Coloque sua foto dentro de /public
               alt="Caio Costa"
-              className="w-96 h-96 md:w-128 md:h-128 rounded-full object-cover shadow-elegant"
+              className="block w-72 h-72 md:w-72 md:h-72 rounded-full object-cover shadow-elegant"
             />
           </div>
 
@@ -26,7 +25,7 @@ const Hero = () => {
           <div className="text-center md:text-left flex-1">
             <h1 className="text-4xl md:text-2xl font-bold mb-6 animate-fade-in">
               Olá, eu sou
-              <span className="block text-8xl md:text-5xl mt-2">
+              <span className="block text-8xl md:text-5xl sm:text-2xl mt-2">
                 Caio Costa
               </span>
             </h1>
@@ -67,23 +66,28 @@ const Hero = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:caiocosta.profissional2007@gmail.com"
-                className="text-white/80 hover:text-white transition-smooth"
-              >
-                <Mail size={24} />
-              </a>
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=caiocosta.profissional2007@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="E-mail"
+  className="text-white/80 hover:text-white transition-smooth"
+>
+  <Mail size={24} />
+</a>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Botão para rolar */}
-      <button
-        onClick={() => scrollToSection("sobre")}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/80 hover:text-white transition-smooth animate-bounce"
-      >
-        <ArrowDown size={32} />
-      </button>
+      {/* Botão para rolar - agora dentro do fluxo */}
+      <div className="mt-8 mb-6">
+        <button
+          onClick={() => scrollToSection("sobre")}
+          className="text-white/80 hover:text-white transition-smooth animate-bounce"
+        >
+          <ArrowDown size={28} />
+        </button>
+      </div>
     </section>
   );
 };
