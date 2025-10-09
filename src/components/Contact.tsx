@@ -32,53 +32,49 @@ const Contact = () => {
   };
 */
   return (
-    <section id="contato" className="py-20 bg-secondary/30 md:pt-0">
-      <div className="container mx-auto px-6">
+    <section id="contato" className="py-12 sm:py-20 bg-secondary/30">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 text-gradient">
             Contato
           </h2>
-          
-          <div className="grid md:grid-cols-1 gap-8">
-            <Card className="card-gradient shadow-elegant p-4">
-              <h3 className="text-2xl font-bold mb-6">Vamos conversar!</h3>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                Estou sempre aberto a novas oportunidades e projetos interessantes. 
-                Entre em contato comigo através dos canais abaixo.
-              </p>
-              
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <Mail className="text-primary" size={20} />
+
+          <div className="grid gap-6 sm:gap-8">
+            <Card className="card-gradient shadow-elegant p-4 sm:p-6 md:p-8">
+              <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">Vamos conversar!</h3>
+
+              <div className="space-y-4 sm:space-y-6">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+                  <div className="p-2 sm:p-3 bg-primary/10 rounded-full">
+                    <Mail className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <div>
+                  <div className="min-w-0 flex-1">
                     <p className="font-medium">Email</p>
                     <p className="text-muted-foreground">caiocosta.profissional2007@gmail.com</p>
                   </div>
                 </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <Phone className="text-primary" size={20} />
+
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+                  <div className="p-2 sm:p-3 bg-primary/10 rounded-full">
+                    <Phone className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <div>
+                  <div className="min-w-0 flex-1">
                     <p className="font-medium">Telefone</p>
                     <p className="text-muted-foreground"> +55 (11) 96413-1118</p>
                   </div>
                 </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-full">
-                    <MapPin className="text-primary" size={20} />
+
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+                  <div className="p-2 sm:p-3 bg-primary/10 rounded-full">
+                    <MapPin className="text-primary w-5 h-5 sm:w-6 sm:h-6" />
                   </div>
-                  <div>
+                  <div className="min-w-0 flex-1">
                     <p className="font-medium">Localização</p>
                     <p className="text-muted-foreground">Itu, SP - Brasil</p>
                   </div>
                 </div>
               </div>
-              
+
               <div className="flex gap-4 mt-8">
                 <a href="https://github.com/CaioCosta2JZ" className="p-3 bg-primary/10 rounded-full hover:bg-primary/20 transition-smooth">
                   <Github className="text-primary" size={20} />
@@ -88,8 +84,6 @@ const Contact = () => {
                 </a>
               </div>
             </Card>
-            
-            
           </div>
         </div>
       </div>

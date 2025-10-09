@@ -5,25 +5,25 @@ const About = () => {
     <section id="sobre" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 text-gradient">
             Sobre Mim
           </h2>
-          
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+            <div className="space-y-4 sm:space-y-6">
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
                 Profissional com sólida base em Desenvolvimento Full Stack e Cibersegurança, além de inglês avançado.
                 Minha formação, certificados e projetos abrangem desde a Análise e Projeto de Sistemas, Testes e Qualidade de Software (QA),
-                até Segurança da Informação e Hacking Ético. 
-                Tenho foco em entregar soluções completas e de alta performance. 
-                Sou proativo na busca por otimizações, eficaz na execução de tarefas e disposto a enfrentar novos desafios, 
+                até Segurança da Informação e Hacking Ético.
+                Tenho foco em entregar soluções completas e de alta performance.
+                Sou proativo na busca por otimizações, eficaz na execução de tarefas e disposto a enfrentar novos desafios,
                 e procuro desenvolver soluções de qualidade em ambientes de desenvolvimento Web, Mobile e Desktop.
               </p>
-              
+
               <p className="text-lg text-muted-foreground leading-relaxed">
-                
+
               </p>
-              
+
               <div className="flex flex-wrap gap-3 mt-8">
                 {["HTML", "CSS", "JS", "C#", "Python", "PHP", "React Native", "MySQL", "Linux", "Kali Linux"].map((tech) => (
                   <span
@@ -35,7 +35,7 @@ const About = () => {
                 ))}
               </div>
             </div>
-            
+
             <Card className="card-gradient shadow-elegant p-8">
               <div className="space-y-6">
                 <div className="text-center">
@@ -48,7 +48,7 @@ const About = () => {
                     Focado em entregar qualidade, performance e segurança.
                   </p>
                 </div>
-                
+
                 <div className="space-y-4">
                   {[
                     { label: "Projetos Concluídos", value: "6+" },

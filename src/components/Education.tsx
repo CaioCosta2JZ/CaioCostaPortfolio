@@ -18,28 +18,25 @@ const Education = () => {
           <h2 className="text-5xl md:text-5xl font-bold text-center mb-16 text-gradient">
             Formação Acadêmica
           </h2>
-          
+
           <div className="space-y-8">
             {education.map((edu, index) => (
-              <Card key={index} className="card-gradient shadow-elegant p-8 hover:shadow-glow transition-smooth">
-                <div className="flex items-start gap-6">
-                  <div className="p-3 bg-primary/10 rounded-full">
+              <Card key={index} className="card-gradient shadow-elegant p-4 sm:p-6 md:p-8 hover:shadow-glow transition-smooth">
+                <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6">
+                  <div className="p-3 bg-primary/10 rounded-full self-center sm:self-start">
                     <GraduationCap className="text-primary" size={24} />
                   </div>
-                  
-                  <div className="flex-1">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                      <div>
-                        <h3 className="text-2xl font-bold mb-2">{edu.degree}</h3>
-                        <p className="text-xl text-primary font-medium">{edu.institution}</p>
-                      </div>
-                      
-                      <div className="flex items-center gap-2 text-muted-foreground mt-2 md:mt-0">
+
+                  <div className="flex-1 text-center sm:text-left">
+                    <div className="flex flex-col gap-2 mb-4">
+                      <h3 className="text-xl sm:text-2xl font-bold">{edu.degree}</h3>
+                      <p className="text-lg sm:text-xl text-primary font-medium">{edu.institution}</p>
+                      <div className="flex items-center justify-center sm:justify-start gap-2 text-muted-foreground">
                         <Calendar size={16} />
                         <span>{edu.period}</span>
                       </div>
                     </div>
-                    
+
                     <p className="text-muted-foreground leading-relaxed">
                       {edu.description}
                     </p>

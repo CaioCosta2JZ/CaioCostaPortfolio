@@ -17,21 +17,21 @@ const Hero = () => {
             <img
               src={fotoMinhav2} // Coloque sua foto dentro de /public
               alt="Caio Costa"
-              className="block w-72 h-72 md:w-72 md:h-72 rounded-full object-cover shadow-elegant"
+              className="block w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full object-cover shadow-elegant"
             />
           </div>
 
           {/* Texto à direita */}
           <div className="text-center md:text-left flex-1">
-            <h1 className="text-4xl md:text-2xl font-bold mb-6 animate-fade-in">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 animate-fade-in">
               Olá, eu sou
-              <span className="block text-8xl md:text-5xl sm:text-2xl mt-2">
+              <span className="block text-4xl sm:text-6xl md:text-8xl mt-2">
                 Caio Costa
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto md:mx-0">
-              Desenvolvedor Full Stack | Engenheiro de Cibersegurança
+            <p className="text-lg sm:text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto md:mx-0">
+              Desenvolvedor Full Stack | Profissional em Cibersegurança
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12">
@@ -66,14 +66,14 @@ const Hero = () => {
                 <Linkedin size={24} />
               </a>
               <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=caiocosta.profissional2007@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="E-mail"
-  className="text-white/80 hover:text-white transition-smooth"
->
-  <Mail size={24} />
-</a>
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=caiocosta.profissional2007@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="E-mail"
+                className="text-white/80 hover:text-white transition-smooth"
+              >
+                <Mail size={24} />
+              </a>
             </div>
           </div>
         </div>

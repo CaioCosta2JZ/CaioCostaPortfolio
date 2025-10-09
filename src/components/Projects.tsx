@@ -31,7 +31,7 @@ const Projects = () => {
     {
       title: "BOMBHERO: Jogo de estratégia",
       description:
-        "Dashboard interativo para visualização de dados meteorológicos com gráficos e previsões.",
+        "Jogo Web desafiador e emocionante que colocará suas habilidades cognitivas à prova.",
       image: fotoBombhero,
       technologies: ["HTML5", "CSS3", "JavaScript", "JQuery"],
       github: "https://github.com/CarlosMattei/BOMBHERO",
@@ -51,27 +51,26 @@ const Projects = () => {
     <section id="projetos" className="py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center mb-8 sm:mb-16 text-gradient">
             Projetos
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {projects.map((project, index) => (
               <Card
                 key={index}
                 className="card-gradient shadow-elegant overflow-hidden hover:shadow-glow transition-smooth group"
               >
-                <div className="p-6">
-                  <div className="flex items-center gap-4 mb-4">
-                    {/* Se for emoji (string curta), mostra texto. Se for imagem, renderiza <img /> */}
+                <div className="p-4 sm:p-6">
+                  <div className="flex items-center gap-3 sm:gap-4 mb-4">
                     {typeof project.image === "string" &&
-                    project.image.length <= 3 ? (
-                      <div className="text-6xl">{project.image}</div>
+                      project.image.length <= 3 ? (
+                      <div className="text-4xl sm:text-6xl">{project.image}</div>
                     ) : (
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="w-16 h-18 object-contain"
+                        className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
                       />
                     )}
                     <div>
