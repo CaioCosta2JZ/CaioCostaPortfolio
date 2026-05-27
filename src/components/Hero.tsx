@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-import fotoMinhav2 from "../../public/fotoMinhav3.png";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -15,7 +14,7 @@ const Hero = () => {
           {/* Imagem à esquerda */}
           <div className="flex justify-center md:justify-end">
             <img
-              src={fotoMinhav2} // Coloque sua foto dentro de /public
+              src="/fotoMinhav3.png" // image from /public
               alt="Caio Costa"
               className="block w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full object-cover shadow-elegant"
             />
